@@ -66,7 +66,12 @@ class AdminNavbar extends React.Component {
             { 'navbar-light bg-secondary': this.props.theme === 'light' }
           )}
         >
-          <Container fluid>
+          <Container
+            style={{
+              paddingTop: 25,
+            }}
+            fluid
+          >
             <Collapse navbar isOpen={true}>
               <Form
                 className={classnames(
