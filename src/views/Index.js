@@ -1,23 +1,7 @@
-/*!
-
-=========================================================
-* Argon Dashboard PRO React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-pro-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 /*eslint-disable*/
-import React from "react";
+import React from 'react';
 // react library for routing
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 // reactstrap components
 import {
   Badge,
@@ -27,12 +11,12 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip
-} from "reactstrap";
+  UncontrolledTooltip,
+} from 'reactstrap';
 // core components
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import IndexHeader from "components/Headers/IndexHeader.js";
-import AuthFooter from "components/Footers/AuthFooter.js";
+import IndexNavbar from 'components/Navbars/IndexNavbar.js';
+import IndexHeader from 'components/Headers/IndexHeader.js';
+import AuthFooter from 'components/Footers/AuthFooter.js';
 
 class Index extends React.Component {
   render() {
@@ -160,7 +144,7 @@ class Index extends React.Component {
                   <img
                     alt="..."
                     className="img-fluid"
-                    src={require("assets/img/theme/landing-1.png")}
+                    src={require('assets/img/theme/landing-1.png')}
                   />
                 </Col>
                 <Col className="order-md-1" md="6">
@@ -234,7 +218,7 @@ class Index extends React.Component {
                   <img
                     alt="..."
                     className="img-fluid"
-                    src={require("assets/img/theme/landing-2.png")}
+                    src={require('assets/img/theme/landing-2.png')}
                   />
                 </Col>
                 <Col md="6">
@@ -263,7 +247,7 @@ class Index extends React.Component {
                   <img
                     alt="..."
                     className="img-fluid"
-                    src={require("assets/img/theme/landing-3.png")}
+                    src={require('assets/img/theme/landing-3.png')}
                   />
                 </Col>
                 <Col className="order-md-1" md="6">
@@ -353,7 +337,7 @@ class Index extends React.Component {
               <Row className="row-grid justify-content-center">
                 <Col className="text-center" lg="8">
                   <h2 className="display-3">
-                    Do you love this awesome{" "}
+                    Do you love this awesome{' '}
                     <span className="text-success">
                       Dashboard for Bootstrap 4, React and Reactstrap?
                     </span>
@@ -466,7 +450,7 @@ class Index extends React.Component {
                             alt="..."
                             className="img-fluid rounded-circle"
                             src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/laravel_logo.png"
-                            style={{ backgroundColor: "white" }}
+                            style={{ backgroundColor: 'white' }}
                           />
                         </a>
                         <UncontrolledTooltip

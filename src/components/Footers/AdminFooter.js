@@ -27,6 +27,7 @@ class Calendar extends React.Component {
             bottom: 0,
             left: 0,
             right: 0,
+            zIndex: 999,
             boxShadow: '0px -2px 7px rgb(0 0 0 / 20%)',
           }}
         >
