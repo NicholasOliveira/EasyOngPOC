@@ -17,11 +17,44 @@ import {
   Container,
   Row,
   Col,
+  NavLink
 } from 'reactstrap';
 // core components
 import SimpleHeader from 'components/Headers/MyProfileHeader.js';
+import { Link } from 'react-router-dom';
 
 class Profile extends React.Component {
+  menuItens = [
+    {
+      name: 'Sobre o Easy Ong',
+      ico: '',
+      button: '',
+      link: 'about',
+    },
+    {
+      name: 'Fale conosco',
+      ico: '',
+      button: '',
+      link: 'faleconosco',
+    },
+    {
+      name: 'Perguntas frequentes',
+      ico: '',
+      button: '',
+      link: 'faq',
+    },
+    {
+      name: 'Termos de uso',
+      ico: '',
+      button: '',
+      link: '',
+    },{
+      name: 'Politica de Privacidade',
+      ico: '',
+      button: '',
+      link: '',
+    }
+  ]
   render() {
     return (
       <>
@@ -31,9 +64,7 @@ class Profile extends React.Component {
             <Col
               className="order-xl-2"
               xl="4"
-              style={{
-                marginBottom: '100px',
-              }}
+              
             >
               <Card className="card-profile">
                 <CardImg
@@ -113,6 +144,53 @@ class Profile extends React.Component {
                       University of Computer Science
                     </div>
                   </div>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col xl="4" style={{
+                marginBottom: '100px',
+              }}>
+              <Card>
+                <CardBody>
+                  <ListGroup className="list my--3" flush>
+
+                  {
+                    this.menuItens.map(item => (
+                      <ListGroupItem className="px-0">
+                        <Row className="align-items-center">
+                          <Col className="col-auto">
+                            <a
+                              className="avatar rounded-circle"
+                              href="#pablo"
+                              onClick={(e) => e.preventDefault()}
+                            >
+                              <img
+                                alt="..."
+                                src={require('assets/img/theme/team-1.jpg')}
+                              />
+                            </a>
+                          </Col>
+                          <div className="col ml--2">
+                            <h4 className="mb-0">
+                              <a
+                                href={item.link}
+                              >
+                                { item.name }
+                              </a>
+                            </h4>
+                          </div>
+                          <Col className="col-auto">
+                          <NavLink to={item.link} tag={Link}>
+                            <Button color="secondary" size="sm" type="button">
+                              <i className="ni ni-bold-right" />
+                            </Button>
+                          </NavLink>
+                          </Col>
+                        </Row>
+                      </ListGroupItem>
+                    ))
+                  }
+                  </ListGroup>
                 </CardBody>
               </Card>
             </Col>

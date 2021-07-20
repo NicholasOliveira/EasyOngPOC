@@ -37,11 +37,12 @@ class AdminNavbar extends React.Component {
     return (
       <>
         <Navbar
-          className="d-none navbar-horizontal navbar-main navbar-dark navbar-transparent"
+          className="navbar-horizontal navbar-main navbar-dark navbar-transparent"
           expand="lg"
           id="navbar-main"
         >
-          <Container>
+        
+          <Container className="d-none">
             <NavbarBrand to="/" tag={Link}>
               <img
                 alt="..."

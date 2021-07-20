@@ -31,8 +31,26 @@ import MyProfile from 'views/pages/Profile';
 import Add from 'views/pages/Add';
 import Faq from 'views/pages/Faq';
 import Detail from 'views/pages/Detail';
+import About from 'views/pages/Profile/About';
+import FaleConosco from 'views/pages/FaleConosco';
 
 const routes = [
+  {
+    collapse: false,
+    path: '/about',
+    name: 'About',
+    icon: 'ni ni-archive-2 text-green',
+    component: About,
+    layout: '/admin',
+  },
+  {
+    collapse: false,
+    path: '/faleconosco',
+    name: 'FaleConosco',
+    icon: 'ni ni-archive-2 text-green',
+    component: FaleConosco,
+    layout: '/admin',
+  },
   {
     collapse: false,
     path: '/ongs',

@@ -24,6 +24,7 @@ class Calendar extends React.Component {
           fluid
           style={{
             position: 'fixed',
+            display: 'none',
             bottom: 0,
             left: 0,
             right: 0,
