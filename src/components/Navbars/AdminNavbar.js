@@ -65,6 +65,10 @@ class AdminNavbar extends React.Component {
             { 'navbar-dark bg-info': this.props.theme === 'dark' },
             { 'navbar-light bg-secondary': this.props.theme === 'light' }
           )}
+          style={{
+            'visibility': 'hidden',
+            'z-index': 999,
+          }}
         >
           <Container
             style={{
@@ -72,7 +76,9 @@ class AdminNavbar extends React.Component {
             }}
             fluid
           >
-            <Collapse navbar isOpen={true}>
+            <Collapse navbar isOpen={true} style={{
+              display: 'none'
+            }}>
               <Form
                 className={classnames(
                   'navbar-search form-inline mr-sm-3',
